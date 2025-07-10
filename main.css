@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+body {
+    font-family: "Bricolage Grotesque", sans-serif; /* Quotes are essential for multi-word names! */
+    background-color: #f75229;
+    color: #eaf2f2;
+    text-align: center;
+    padding: 200px;
+background-color: #f75229;
+opacity: 0.9;
+background-image:  radial-gradient(#4f2217 1.55px, transparent 1.55px), radial-gradient(#4f2217 1.55px, #f75229 1.55px);
+background-size: 62px 62px;
+background-position: 0 0,31px 31px; 
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -2;
+    margin-bottom: 0;
+}
+
+h5 {
+    margin-top: 0;
+}
+
+button {
+    border: none;
+    background-color: #f0f0f0;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+
+    outline: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    /* --- ADD THESE TRANSITION PROPERTIES FOR ANIMATION --- */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animation on Hover */
+button:hover {
+    background-color: #e0e0e0; /* Change background color */
+    transform: translateY(-3px); /* Slightly lift the button */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* Animation on Focus (for keyboard navigation) */
+button:focus {
+    transform: translateY(-3px); /* Keep it lifted if focused */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 0 0 3px rgba(0, 123, 255, 0.5); /* Lift + focus glow */
+}
+
+/* When button is actually clicked (active state) */
+button:active {
+    transform: translateY(0); /* Press down effect */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Smaller shadow when pressed */
+    background-color: #d0d0d0; /* Darker background when pressed */
+}
